@@ -54,7 +54,9 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/age_edit_text"/>
+            android:id="@+id/age_edit_text"
+            android:text="@{String.valueOf(person.age)}"/>
+            />
     </LinearLayout>
 </layout>
 
