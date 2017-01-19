@@ -56,7 +56,13 @@
             android:ems="10"
             android:id="@+id/age_edit_text"
             android:text="@{String.valueOf(person.age)}"/>
-            />
+
+        <Button
+            android:text="@string/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear_button" />
+        />
     </LinearLayout>
 </layout>
 
