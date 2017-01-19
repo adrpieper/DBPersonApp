@@ -45,5 +45,14 @@ public class Person extends BaseObservable {
         this.age = age;
         notifyPropertyChanged(BR.age);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
 

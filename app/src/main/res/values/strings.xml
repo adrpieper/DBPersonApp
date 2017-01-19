@@ -4,4 +4,5 @@
     <string name="surname">Nazwisko</string>
     <string name="age">Wiek</string>
     <string name="clear">Czyść</string>
+    <string name="show">Pokaż</string>
 </resources>
