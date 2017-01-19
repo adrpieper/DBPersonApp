@@ -12,7 +12,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        binding.setPerson(new Person("Adrian", "Pieper", 1));
+        Person person = new Person("Adrian", "Pieper", 1);
+        binding.setPerson(person);
+        person.setName("Adam");
+
 
     }
 }
