@@ -10,7 +10,7 @@ import android.databinding.Bindable;
 public class Person extends BaseObservable {
     private String name;
     private String surname;
-    private final int age;
+    private int age;
 
     public Person(String name, String surname, int age) {
         this.name = name;
@@ -26,6 +26,7 @@ public class Person extends BaseObservable {
         return surname;
     }
 
+    @Bindable
     public int getAge() {
         return age;
     }
@@ -38,6 +39,11 @@ public class Person extends BaseObservable {
     public void setSurname(String surname) {
         this.surname = surname;
         notifyPropertyChanged(BR.surname);
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+        notifyPropertyChanged(BR.age);
     }
 }
 

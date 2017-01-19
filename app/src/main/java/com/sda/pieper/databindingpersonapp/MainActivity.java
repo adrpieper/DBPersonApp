@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 person.setName("");
                 person.setSurname("");
+                person.setAge(0);
             }
         });
 
